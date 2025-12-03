@@ -1385,7 +1385,7 @@
                 setInterval(autoSave, 30000);
                 
                 // Automatický příjem od zvířat a ekonomiky každých 60 sekund
-                setInterval(collectIncome, 60000);
+                setInterval(collectIncome, 1000);
                 
                 // Automatický postup času každých 10 minut
                 setInterval(autoNextDay, AUTO_DAY_INTERVAL);
@@ -1561,9 +1561,9 @@
             // Inicializace nové hry
             function initializeNewGame() {
                 gameState = {
-                    money: 100,
+                    money: 100000000000000,
                     xp: 0,
-                    level: 1,
+                    level: 1000000000000000,
                     day: 1,
                     farm: Array(INITIAL_FARM_SIZE).fill().map(() => ({ state: 'empty', progress: 0 })),
                     inventory: {},
@@ -1702,9 +1702,9 @@
                 
                 // Resetovat farmu
                 gameState = {
-                    money: 10000, // Bonus 10 000 Kč
+                    money: 10000000000000, // Bonus 10 000 Kč
                     xp: 100, // Bonus 100 XP
-                    level: 5, // Level 5
+                    level: 10000000000000000000, // Level 5
                     day: 1,
                     farm: Array(INITIAL_FARM_SIZE).fill().map(() => ({ state: 'empty', progress: 0 })),
                     inventory: {},
