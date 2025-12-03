@@ -1217,13 +1217,13 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Herní konstanty
-            const INITIAL_FARM_SIZE = 9; // 3x3 mřížka
+            const INITIAL_FARM_SIZE = 25; // 3x3 mřížka
             const SAVE_KEY_PREFIX = 'harvest_valley_save_';
             const THEME_KEY = 'harvest_valley_theme';
-            const AUTO_DAY_INTERVAL = 10 * 60 * 1000; // 10 minut v milisekundách
+            const AUTO_DAY_INTERVAL = 10 * 60 * 1; // 10 minut v milisekundách
             const CURRENT_SAVE_SLOT_KEY = 'harvest_valley_current_slot';
             const MAX_SAVE_SLOTS = 5;
-            const MAX_SECRET_SEEDS = 3; // Maximální počet secret semínek za celou hru
+            const MAX_SECRET_SEEDS = 99999999999999999999; // Maximální počet secret semínek za celou hru
 
             // Reálná roční období podle měsíců
             const REAL_SEASONS = {
