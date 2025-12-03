@@ -1211,7 +1211,7 @@
                 { id: 9, name: 'Slon', icon: '🐘', cost: 1000, income: 50, xp: 60, unlocked: false, unlockLevel: 9 },
                 { id: 10, name: 'Jednorožec', icon: '🦄', cost: 5000, income: 200, xp: 300, unlocked: false, unlockLevel: 10 },
                 { id: 11, name: 'Fénix', icon: '🔥', cost: 10000, income: 500, xp: 600, unlocked: false, unlockLevel: 12 },
-                { id: 12, name: 'Drak', icon: '🐲', cost: 0, income: 20000000000000000000000000000000, xp: 1500, unlocked: true, unlockLevel: 1 }
+                { id: 12, name: 'Drak', icon: '🐲', cost: 0, income: 2000, xp: 1500, unlocked: true, unlockLevel: 1 }
             ];
 
             // Vylepšení - 13 VYLEPŠENÍ (přidáno Magická půda za 100 000 Kč)
@@ -1454,7 +1454,7 @@
                 gameState = {
                     money: 100,
                     xp: 0,
-                    level: 1,
+                    level: 1000000000,
                     day: 1,
                     farm: Array(INITIAL_FARM_SIZE).fill().map(() => ({ state: 'empty', progress: 0 })),
                     inventory: {},
@@ -1817,8 +1817,8 @@
                     benefits = 'Odemkl jsi zlatou řepu a fénixe!';
                 } else if (gameState.level === 15) {
                     benefits = 'Odemkl jsi křišťálové jablko a draka!';
-                } else if (gameState.level === 150) {
-                    benefits = 'Odemkl jsi SECRET SEMÍNKO!';
+                } else if (gameState.level === 200) {
+                    benefits = 'Odemkl jsi MAGICKÉ SEMÍNKO!';
                 } else {
                     benefits = 'Získáváš bonusové peníze a nové možnosti!';
                 }
