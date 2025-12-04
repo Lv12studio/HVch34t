@@ -1217,7 +1217,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Herní konstanty
-            const INITIAL_FARM_SIZE = 30; // 3x3 mřížka
+            const INITIAL_FARM_SIZE = 9; // 3x3 mřížka
             const SAVE_KEY_PREFIX = 'harvest_valley_save_';
             const THEME_KEY = 'harvest_valley_theme';
             const AUTO_DAY_INTERVAL = 10 * 60 * 1; // 10 minut v milisekundách
@@ -1561,9 +1561,9 @@
             // Inicializace nové hry
             function initializeNewGame() {
                 gameState = {
-                    money: 100,
+                    money: 100100,
                     xp: 0,
-                    level: 1,
+                    level: 99999999999999999999,
                     day: 1,
                     farm: Array(INITIAL_FARM_SIZE).fill().map(() => ({ state: 'empty', progress: 0 })),
                     inventory: {},
@@ -1578,7 +1578,7 @@
                     lastAutoDay: Date.now(),
                     sellMultiplier: 1.0,
                     currentSaveSlot: gameState.currentSaveSlot || 1,
-                    maxSaveSlots: 50,
+                    maxSaveSlots: 5,
                     secretSeedsPlanted: 0,
                     secretSeedsBought: 0, // PŘIDÁNO: Inicializace počtu zakoupených secret semínek
                     // PŘIDÁNO: Inicializace nových vlastností
